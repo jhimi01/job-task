@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- style link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -34,7 +34,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <img src="/images/whole.png" alt="">
+          <img src="/images/whole.png" alt="" />
         </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <div class="w-50 mx-auto mb-2 mb-lg-0">
@@ -46,7 +46,9 @@
           </div>
 
           <form>
-            <p class="text-black-50 fw-bold">Create account. <span class="text-primary">It's free</span></p>
+            <p class="text-black-50 fw-bold">
+              Create account. <span class="text-primary">It's free</span>
+            </p>
           </form>
         </div>
       </div>
@@ -55,22 +57,79 @@
     <!-- main section -->
 
     <main>
-        <!-- hero section -->
-        <div class="w-100 position-relative">
-            <img class="w-100 " src="./images/bg.png" alt="">
-            <div class="overlay"></div> 
-            <div class="text-overlay">
-                <h1>Computer Engineering</h1>
-                <p>142,765 Computer Engineers follow this</p>
-            </div>
+      <!-- hero section -->
+      <div class="w-100 position-relative">
+        <img class="w-100" src="./images/bg.png" alt="" />
+        <div class="overlay"></div>
+        <div class="text-overlay">
+          <h1>Computer Engineering</h1>
+          <p>142,765 Computer Engineers follow this</p>
         </div>
+      </div>
+      <!-- <div class="w-100 position-relative">
+        <img class="w-100" src="./images/bg.png" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5); pointer-events: none;"></div>
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4">Computer Engineering</h1>
+            <p class="lead">142,765 Computer Engineers follow this</p>
+        </div>
+    </div> -->
 
-        <!-- post section -->
+      <!-- post section -->
+      <section>
+        <div class="container-sm px-5">
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">All post</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Article</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Event</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Job</a>
+                      </li>
+                     
+                    </ul>
+                    <form class="d-flex gap-4">
+                        <button type="button" class="btn bg-light">Write a Post</button>
+                        <button type="button" class="btn btn-primary">Join Group</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+              <!-- post items -->
+              <div class="row mt-4">
+                <div class="col-7">
+                    <div class="card mb-3">
+                        <img src="https://i.ibb.co/j81QLvZ/noaa-kcvlb727mn8-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-5 bg-danger">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis a vitae nobis obcaecati omnis perferendis eum, tenetur laborum reprehenderit, totam repellendus saepe fuga! Nostrum et quam vitae repellat doloribus provident?</h1>
+                </div>
+              </div>
+        </div>
+      </section>
     </main>
-    
 
-
-
+    <!-- javascript link added -->
+    <script src="index.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
