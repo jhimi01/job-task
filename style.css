@@ -1,3 +1,7 @@
+input:focus{
+  outline: none;
+  border: none;
+}
 .overlay {
     position: absolute;
     top: 0;
