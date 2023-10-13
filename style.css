@@ -1,6 +1,16 @@
+.custom-secondary {
+  background: #c7c7c783;
+  border: none;
+  border-radius: 5px;
+  padding: 0 12px;
+}
 input:focus{
   outline: none;
   border: none;
+}
+.navbar-toggler:focus{
+ outline: none;
+ border: none;
 }
 .overlay {
     position: absolute;
