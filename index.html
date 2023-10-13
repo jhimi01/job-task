@@ -26,13 +26,17 @@
     />
 
     <title>Hello, world!</title>
+
+    <style>
+     
+    </style>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar container navbar-expand-lg navbar-light">
+    <nav class="navbar container navbar-expand-md navbar-light">
       <div class="container-fluid">
         <button
-          class="navbar-toggler py-2 border-0 ms-auto d-block d-lg-none gap-2"
+          class="navbar-toggler py-2 border-0 ms-auto d-block d-md-none gap-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo03"
@@ -64,7 +68,7 @@
 
           <form>
             <p
-              class="text-muted fw-custom d-flex align-items-center"
+              class="text-muted fw-custom d-flex align-items-center d-md-block d-none"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -82,12 +86,18 @@
 
     <main>
       <!-- hero section -->
-      <div class="w-100 position-relative">
-        <img class="w-100" src="./images/bg.png" alt="" />
+      <div class="hero-section">
         <div class="overlay"></div>
-        <div class="text-overlay">
+        <div class="container end-0 hero-content">
           <h1>Computer Engineering</h1>
           <p>142,765 Computer Engineers follow this</p>
+        </div>
+        <div class="d-block d-md-none position-absolute w-100 d-flex top-0 end-0 p-4  justify-content-between">
+          <h1><i class="fa-solid fa-arrow-left"></i></h1>
+          <button class="btn btn-outline-light" type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-bs-whatever="@getbootstrap">Join Group</button>
         </div>
       </div>
 
@@ -464,7 +474,11 @@
                       />
                       <h6>Leisure</h6>
                     </div>
-                    <button id="followButton1" onclick="toggleFollow('followButton1')" class="custom-secondary rounded-pill py-1 follow-button">
+                    <button
+                      id="followButton1"
+                      onclick="toggleFollow('followButton1')"
+                      class="custom-secondary rounded-pill py-1 follow-button"
+                    >
                       Follow
                     </button>
                   </div>
@@ -480,7 +494,9 @@
                       />
                       <h6>Activism</h6>
                     </div>
-                    <button class="custom-secondary rounded-pill py-1 follow-button">
+                    <button
+                      class="custom-secondary rounded-pill py-1 follow-button"
+                    >
                       Follow
                     </button>
                   </div>
@@ -496,7 +512,9 @@
                       />
                       <h6>MBA</h6>
                     </div>
-                    <button class="custom-secondary rounded-pill py-1 follow-button">
+                    <button
+                      class="custom-secondary rounded-pill py-1 follow-button"
+                    >
                       Follow
                     </button>
                   </div>
@@ -512,7 +530,9 @@
                       />
                       <h6>Philosophy</h6>
                     </div>
-                    <button class="custom-secondary rounded-pill py-1 follow-button">
+                    <button
+                      class="custom-secondary rounded-pill py-1 follow-button"
+                    >
                       Follow
                     </button>
                   </div>
@@ -535,7 +555,7 @@
         >
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
-              <div class="modal-header bg-success" style="--bs-bg-opacity: 0.5">
+              <div class="modal-header d-none d-md-block bg-success" style="--bs-bg-opacity: 0.5">
                 <h6 class="modal-title text-success" id="exampleModalLabel">
                   Let's learn, share & inspire each other with our passion for
                   computer engineering. Sign up now 🤘🏼
@@ -554,6 +574,15 @@
               <div class="modal-body px-4">
                 <div class="d-md-flex justify-content-between">
                   <h4 class="text-black">Create Account</h4>
+                  <div
+                  type="button"
+                  class="fs-4 d-md-none d-block position-absolute"
+                  data-bs-dismiss="modal"
+                  style="top: 10px; right: 20px"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-circle-xmark text-secondary"></i>
+                </div>
                   <p
                     style="cursor: pointer"
                     data-bs-target="#exampleModalToggle2"
@@ -628,8 +657,8 @@
                     </form>
                   </div>
                   <div class="col-lg-6 col-12">
-                    <img src="./images/atg_illustration.png" alt="signup img" />
-                    <p class="text-secondary" style="font-size: 13px">
+                    <img src="./images/atg_illustration.png" class="d-md-block d-none" alt="signup img" />
+                    <p class="text-secondary text-center fs-6">
                       By signing up, you agree to our Terms & conditions,
                       Privacy policy
                     </p>
@@ -650,7 +679,7 @@
         >
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-              <div class="modal-header bg-success" style="--bs-bg-opacity: 0.5">
+              <div class="modal-header d-none d-md-block bg-success" style="--bs-bg-opacity: 0.5">
                 <h6 class="modal-title text-success" id="exampleModalLabel">
                   Let's learn, share & inspire each other with our passion for
                   computer engineering. Sign up now 🤘🏼
@@ -668,6 +697,15 @@
               <div class="modal-body px-4">
                 <div class="d-md-flex justify-content-between">
                   <h4 class="text-black">Sign In</h4>
+                  <div
+                  type="button"
+                  class="fs-4 d-md-none d-block position-absolute"
+                  data-bs-dismiss="modal"
+                  style="top: 10px; right: 20px"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-circle-xmark text-secondary"></i>
+                </div>
                   <p
                     style="cursor: pointer"
                     data-bs-target="#exampleModalToggle2"
@@ -725,7 +763,7 @@
                       </div>
                     </form>
                   </div>
-                  <div class="col-lg-6 col-12">
+                  <div class="col-6 d-md-block d-none">
                     <img src="./images/atg_illustration.png" alt="signup img" />
                     <p class="text-secondary" style="font-size: 13px">
                       By signing up, you agree to our Terms & conditions,
