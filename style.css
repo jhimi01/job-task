@@ -51,7 +51,6 @@ input:focus {
   background-position: center;
   color: #fff;
   width: 100%;
-  overflow-x: hidden;
 }
 
 .overlay {
@@ -70,7 +69,6 @@ input:focus {
 }
 .hero-content h1 {
   font-weight: 700;
-  overflow: hidden;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.849);
 }
 .hero-content p {
