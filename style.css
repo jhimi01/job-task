@@ -37,20 +37,19 @@ input:focus {
   border: none;
 }
 .navbar-toggler:focus {
-  outline: none;
-  border: none;
+  outline: none !important;
+  border: none !important;
 }
 
-
 /* hero section */
- /* Custom styles for the hero section */
- .hero-section {
+/* Custom styles for the hero section */
+.hero-section {
   position: relative;
   height: 70vh;
-  background-image: url("./images/bg.png"); /* Replace with your image URL */
+  background-image: url("./images/bg.png");
   background-size: cover;
   background-position: center;
-  color: #fff; /* Text color */
+  color: #fff;
   width: 100%;
   overflow-x: hidden;
 }
@@ -70,7 +69,6 @@ input:focus {
   text-align: left;
 }
 .hero-content h1 {
-  /* font-size: 36px; */
   font-weight: 700;
   overflow: hidden;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.849);
